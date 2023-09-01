@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="Temperature.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <!-- Form -->
+      <form onsubmit="calculateTemp(); return false" id="calcTemp">
+        <input type="number" id="input1" value="0" placeholder="Degrees" />
+        <select id="input2">
+          <option value="cel">Celsius</option>
+          <option value="fah">Fahrenheit</option>
+        </select>
+        <br />
+        <input
+          type="text"
+          id="output"
+          disabled="true"
+          placeholder="Result"
+        /><br />
+        <button id="submit" type="submit" class="btn-1">Convert</button>
+        <button id="submit" type="reset" class="btn-2">Reset</button>
+      </form>
+    </div>
+
+    <script src="Temperature.js"></script>
+  </body>
+</html>
